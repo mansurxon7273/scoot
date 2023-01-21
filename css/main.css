@@ -652,7 +652,7 @@ body {
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-style: normal;
-  border: 2px solid #fcb72b;
+  border: 10px solid #fcb72b;
   display: inline-block;
 }
 .btn:hover {
