@@ -1,0 +1,4 @@
+1.hero background liner
+2. before, after retrina background
+3. js style hover, active...
+4. js element after, before style

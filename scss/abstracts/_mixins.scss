@@ -1,0 +1,48 @@
+@mixin heading-h1 {
+  font-family: $font-family1;
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+  letter-spacing: -0.25rem;
+}
+@mixin heading-h2 {
+  font-family: $font-family1;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.214rem;
+}
+@mixin heading-h3 {
+  font-family: $font-family1;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.179rem;
+}
+@mixin heading-h4 {
+  font-family: $font-family1;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.107rem;
+}
+@mixin font2-style {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+}
+@mixin resfonsive($name) {
+  @if $name == tablet {
+    @media (max-width: 1054px) {
+      @content;
+    }
+  } @else if $name == mobile {
+    @media (max-width: 738px) {
+      @content;
+    }
+  } @else if $name == break {
+    @media (max-width: 1233px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.locate-hero {
+  margin-top: 10rem;
+  background-image: linear-gradient(rgb(47, 59, 89, 0.7), rgb(47, 59, 89, 0.7)),
+    url("../../images/about/Bitmap.png");
+  @include resfonsive(mobile) {
+    margin-top: 7.14rem;
+  }
+}
+.map {
+  padding: 12rem 0 12.2rem;
+  &-group {
+    display: none;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+  }
+  @include resfonsive(break) {
+    &__img {
+      width: 1000px;
+    }
+  }
+  @include resfonsive(tablet) {
+    padding: 14.4rem 0 6.4rem;
+    &__img {
+      width: 689px;
+    }
+  }
+  @include resfonsive(mobile) {
+    padding: 7.2rem 0;
+    &__img {
+      display: none;
+    }
+    &-group {
+      display: block;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4rem;
+      gap: 1.6rem;
+      &__btn {
+        width: 100%;
+        padding: 2.2rem 0;
+        background: rgba(252, 183, 43, 0.15);
+        border: none;
+        @include heading-h4;
+        color: $color-dark-navy;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.city {
+  padding-bottom: 12.2rem;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__heading {
+    @include heading-h2;
+    color: $color-dark-navy;
+    max-width: 351px;
+  }
+  &__decr {
+    max-width: 445px;
+    color: $color-dim-grey;
+    margin: 0 10.5rem 0 3rem;
+  }
+  @include resfonsive(tablet) {
+    padding-bottom: 12rem;
+    &__container {
+      flex-direction: column;
+      gap: 4rem;
+    }
+    &__heading {
+      max-width: 457px;
+      text-align: center;
+    }
+    &__decr {
+      text-align: center;
+      max-width: 573px;
+    }
+  }
+  @include resfonsive(mobile) {
+    padding-bottom: 7.2rem;
+    &__container {
+      gap: 3.2rem;
+    }
+    &__heading {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      letter-spacing: -0.142857rem;
+      max-width: 311px;
+    }
+    &__decr {
+      max-width: 311px;
+      margin: 0 auto;
+    }
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-moz-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 240dpi) {
+  .locate-hero {
+    background-image: linear-gradient(
+        rgb(47, 59, 89, 0.7),
+        rgb(47, 59, 89, 0.7)
+      ),
+      url("../../images/about/Bitmap@2x.png");
+  }
+}

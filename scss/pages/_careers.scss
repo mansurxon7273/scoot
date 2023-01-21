@@ -1,0 +1,80 @@
+.careers-hero {
+  margin-top: 10rem;
+  background-image: linear-gradient(rgb(47, 59, 89, 0.7), rgb(47, 59, 89, 0.7)),
+    url("../../images/about/Bitmap.png");
+  @include resfonsive(mobile) {
+    margin-top: 7.14rem;
+  }
+}
+.mission {
+  padding-top: 10rem;
+  margin-bottom: 12rem;
+  background-image: url("../../images/about/Mask.svg");
+  background-repeat: no-repeat;
+  background-position: right 60%;
+  @include resfonsive(tablet) {
+    background-position: right 15%;
+  }
+  @include resfonsive(mobile) {
+    background-image: none;
+  }
+}
+.departments {
+  padding-bottom: 16rem;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &__item {
+    display: flex;
+    padding: 3.2rem 6.4rem 3.5rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__heading {
+    color: $color-dark-navy;
+    @include heading-h4;
+    margin-bottom: 0.8rem;
+  }
+  &__decr {
+    color: $color-dark-navy;
+  }
+  @include resfonsive(tablet) {
+    padding-bottom: 12rem;
+  }
+  @include resfonsive(mobile) {
+    &__container {
+      padding: 0 3.2rem;
+    }
+    padding-top: 2.5rem;
+    &__item {
+      flex-direction: column;
+      gap: 1.6rem;
+      padding: 3.6rem 0 3.2rem;
+    }
+    &__heading {
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      letter-spacing: -0.0803571rem;
+    }
+    &__decr {
+      text-align: center;
+    }
+    &__btn {
+      padding: 1.4rem 10rem;
+    }
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-moz-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 240dpi) {
+  .careers-hero {
+    background-image: linear-gradient(
+        rgb(47, 59, 89, 0.7),
+        rgb(47, 59, 89, 0.7)
+      ),
+      url("../../images/about/Bitmap@2x.png");
+  }
+}
