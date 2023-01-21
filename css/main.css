@@ -644,7 +644,7 @@ body {
 }
 
 .btn {
-  background-color: red;
+  background-color: #fcb72b;
   padding: 1.4rem 4.712rem 1.4rem 4.821rem;
   font-family: "Space Mono", sans-serif;
   color: #fff;
@@ -652,7 +652,7 @@ body {
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-style: normal;
-  border: 10px solid #fcb72b;
+  border: 2px solid #fcb72b;
   display: inline-block;
 }
 .btn:hover {

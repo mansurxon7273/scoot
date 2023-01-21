@@ -1,5 +1,5 @@
 .btn {
-  background-color: red;
+  background-color: $color-yellow;
   padding: 1.4rem 4.712rem 1.4rem 4.821rem;
   font-family: $font-family1;
   color: $color-white;
@@ -7,7 +7,7 @@
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-style: normal;
-  border: 10px solid $color-yellow;
+  border: 2px solid $color-yellow;
   display: inline-block;
   &:hover {
     color: $color-yellow;
